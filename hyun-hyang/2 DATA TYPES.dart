@@ -40,4 +40,24 @@ void main() {
     for (var friend in oldFriends) "love $friend",
   ];
   print(newFriends);
+
+  //#2.4 Maps //python의 dictionary 같은것
+  var player = {
+    'name': 'nico',
+    'xp': 1999,
+    'superpower': 'false',
+  };
+
+  Map<List<int>, bool> players = {[1, 2, 3, 5]: true, };
+  List<Map<STring,Object>> players2 - [
+    {
+      'name' : 'nico',
+      'xp':1999993.999
+    },
+    {
+      'name' : 'nico',
+      'xp':1999993.999
+    },
+  ]
+
 }
