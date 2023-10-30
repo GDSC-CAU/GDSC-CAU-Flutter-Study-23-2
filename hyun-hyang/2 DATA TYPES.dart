@@ -23,4 +23,11 @@ void main() {
     numbers.add(5);
   }
   print(numbers);
+
+  //#2.2 String Interpolation
+  var name2 = 'nico';
+  var age2 = 10;
+  var greeting =
+      "Hello everyone, my name is $name2 and I'm ${age2 + 2}, nice to meet you!";
+  print(greeting);
 }
