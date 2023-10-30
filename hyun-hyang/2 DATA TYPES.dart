@@ -9,4 +9,18 @@ void main() {
   //num : int or double, 모두 num의 파생
   num x = 12;
   x = 1.1;
+
+  //#2.1 Lists
+  var giveMeFive = true;
+  var numbers = [
+    1,
+    2,
+    3,
+    4,
+    if (giveMeFive) 5,
+  ];
+  if (giveMeFive = true) {
+    numbers.add(5);
+  }
+  print(numbers);
 }
