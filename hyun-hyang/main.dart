@@ -41,8 +41,12 @@ void main() {
   //name5 = 'nico'; //error
 
   //#1.5 Late Variables
-  //나중에 할당해주고 싶을때
+  //나중에 할당해주고 싶을때 //ex) API할당
   late final String name6;
   name6 = 'nico';
   //name6 = '12'; //error
+
+  //#1.6 Constant Variables
+  //상수 //compile-time constant //ccompile-time에 알고 있는 값 //사용자 폰에서 실행전 앱스토어 올라가기전 알고 있는 값
+  const max_allowed_price = 120;
 }
