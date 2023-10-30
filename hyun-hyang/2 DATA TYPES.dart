@@ -48,16 +48,19 @@ void main() {
     'superpower': 'false',
   };
 
-  Map<List<int>, bool> players = {[1, 2, 3, 5]: true, };
-  List<Map<STring,Object>> players2 - [
-    {
-      'name' : 'nico',
-      'xp':1999993.999
-    },
-    {
-      'name' : 'nico',
-      'xp':1999993.999
-    },
-  ]
+  Map<List<int>, bool> players = {
+    [1, 2, 3, 5]: true,
+  };
+  List<Map<String, Object>> players2 = [
+    {'name': 'nico', 'xp': 1999993.999},
+    {'name': 'nico', 'xp': 1999993.999},
+  ];
 
+  //#2.5 Sets //원소들이 unique
+  var numbers2 = {1, 2, 3, 4};
+  numbers2.add(1);
+  numbers2.add(1);
+  numbers2.add(1);
+  numbers2.add(1);
+  print(numbers2);
 }
