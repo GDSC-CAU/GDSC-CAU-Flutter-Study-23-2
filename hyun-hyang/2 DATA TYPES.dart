@@ -17,7 +17,7 @@ void main() {
     2,
     3,
     4,
-    if (giveMeFive) 5,
+    if (giveMeFive) 5, //collection if
   ];
   if (giveMeFive = true) {
     numbers.add(5);
@@ -30,4 +30,14 @@ void main() {
   var greeting =
       "Hello everyone, my name is $name2 and I'm ${age2 + 2}, nice to meet you!";
   print(greeting);
+
+  //#2.3 Collection For
+  var oldFriends = ['nico', 'lynn'];
+  var newFriends = [
+    'lewis',
+    'ralph',
+    'darren',
+    for (var friend in oldFriends) "love $friend",
+  ];
+  print(newFriends);
 }
