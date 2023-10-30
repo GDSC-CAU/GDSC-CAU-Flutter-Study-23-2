@@ -39,4 +39,10 @@ void main() {
   //1.4 Final Variables
   final name5 = 'nico';
   //name5 = 'nico'; //error
+
+  //#1.5 Late Variables
+  //나중에 할당해주고 싶을때
+  late final String name6;
+  name6 = 'nico';
+  //name6 = '12'; //error
 }
