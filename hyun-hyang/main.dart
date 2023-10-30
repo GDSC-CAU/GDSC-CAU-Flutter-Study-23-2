@@ -25,4 +25,13 @@ void main() {
   name4 = 'nico';
   name4 = 12;
   name4 = true;
+
+  //null safety : null을 참조하지 못하게 함. 런타임에러 방지, 컨파일단계에서 잡아내게
+  //변수 혹은 데이터가 null이 될 수 있음을 명시, null 일때 참조 안하게
+  String? nico = 'nico'; //String일수도 null일수도 있다
+  nico = null;
+  if (nico != null) {
+    nico.isNotEmpty;
+  }
+  nico?.isNotEmpty;
 }
