@@ -4,21 +4,18 @@ void main() {
 
   // 업데이트 가능
   // 함수나 메소드 내부에 지역변수 선언시
+  //var : 권장
   var name = '지민';
   name = 'jimin';
 
   // class에서 변수나 속성 선언시
+  //type 명
   String name2 = '지민';
   name = 'jimin';
 
+  //"1.2 Dynamic Type"
   // dynamic은 필요한 경우만 사용
   // 조건문으로 타입 확인시, 타입의 메소드 사용 가능
-
-  var name3;
-  name3 = 'nico';
-  name3 = 12;
-  name3 = true;
-
   dynamic name4;
   if (name4 is String) {}
   if (name4 is int) {}
@@ -47,6 +44,6 @@ void main() {
   //name6 = '12'; //error
 
   //#1.6 Constant Variables
-  //상수 //compile-time constant //ccompile-time에 알고 있는 값 //사용자 폰에서 실행전 앱스토어 올라가기전 알고 있는 값
+  //상수 //compile-time constant //compile-time에 알고 있는 값 //사용자 폰에서 실행전 앱스토어 올라가기전 알고 있는 값
   const max_allowed_price = 120;
 }
