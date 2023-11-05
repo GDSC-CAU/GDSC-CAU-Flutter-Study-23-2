@@ -22,6 +22,20 @@ String capitalizeName(String? name) =>
   name?.toUpperCase() ?? 'ANON';
   //name != null ? name.toUpperCase() : 'ANON';//left ?? right //left가 null이면 right주고, 아니면 left줌
 
+// #3.5 Typedef (04:50) 
+typedef ListOfInts = List<int>; //alias
+
+ListOfInts reverseListOfNumbers(ListOfInts list){
+  var reversed = list.reversed; //Iterable
+  return reversed.toList();
+}
+//Map //구조화 된 데이터 => class가 나음
+typedef UserInfo = Map<String, String>;
+
+String sayHi(UserInfo userInfo){
+  return "Hi ${userInfo['name']}";
+}
+
 void main(){
     // #3 FUNCTIONS
     print(sayHello('nico'));
@@ -43,7 +57,8 @@ void main(){
     name = null;
     name ??= 'another'; 
     print(name);
-
-    // #3.5 Typedef (04:50)
-
+  
+    print(reverseListOfNumbers([1,2,3]));
+    print(sayHi({"name": 'nico'}));
+ 
 }
