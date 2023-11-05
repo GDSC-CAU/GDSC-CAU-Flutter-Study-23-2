@@ -22,8 +22,6 @@ void main(){
       name: 'nico'
     ));
 
-    // #3.2 Recap (05:49)
-
     // #3.3 Optional Positional Parameters (03:02)
 
     // #3.4 QQ Operator (05:09)
