@@ -1,6 +1,13 @@
+String sayHello(String potato) => "Hello $potato nice to meet you!"; //only one line //바로 return
+
+num plus(num a, num b) => a + b;
+
 void main(){
+
+    // #3 FUNCTIONS
     
     // #3.0 Defining a Function (04:15)
+    print(sayHello('nico'));
 
     // #3.1 Named Parameters (08:54)
 
